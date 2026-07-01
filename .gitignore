@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Project
+backend/logs/
+backend/project/
+backend/.env
+backend/.env.dev
+frontend/.env.development
+frontend/.env
+
+# IDE
+.idea/
+*.swp
+*.swo
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# GitHub CLI
+.claude/

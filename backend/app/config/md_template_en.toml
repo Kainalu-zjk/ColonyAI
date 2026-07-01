@@ -1,0 +1,167 @@
+firstPage = """
+# Title: Based on the full text, choose a descriptive title
+Example: An Optimization Model for Agricultural Planting Based on the Harris Hawk Algorithm
+
+Summary
+First paragraph: Background (1-2 sentences)
+~100 words
+
+Each problem needs a paragraph in the following format, do not use bullet points.
+For Problem X, describe what model was used, how it was built, what work was done, and what results were obtained (with specific numerical values).
+~150 words per problem
+
+Final paragraph: Summarize sensitivity analysis and conclusions.
+~100 words
+
+Keywords: 4-5 terms (models used, e.g., HHO, NSGA-II, TOPSIS)
+
+Reference the following sections and complete the Summary, Keywords.
+---
+{问题}
+{模型的建立与求解}
+"""
+
+RepeatQues = """
+# 1. Introduction
+## 1.1 Problem Background
+Search literature and summarize the problem background (with references).
+Format: Paragraph
+~200 words
+
+## 1.2 Restatement of the Problem
+Based on the information provided, we develop mathematical models to address the following problems:
+
+1. Problem 1: ...
+2. Problem 2: ...
+3. Problem 3: ...
+
+---
+**Reference the problem description below and complete sections 1.1 and 1.2.**
+
+{题目}
+"""
+
+analysisQues = """
+# 2. Problem Analysis
+## 2.1 Analysis of Problem 1
+Two paragraphs, ~300 words.
+
+Template:
+For Problem 1, we are tasked with [brief description]. This is a [problem type: prediction/classification/optimization/evaluation] problem.
+We choose [Model Name] because [rationale compared to alternatives].
+The solution approach involves: [data processing → model construction → parameter setting → solution → validation].
+
+## 2.2 Analysis of Problem 2
+...
+
+---
+**Reference the model solution sections below and complete the analysis for each problem.**
+
+{模型的建立与求解}
+{题目}
+"""
+
+modelAssumption = """
+# 3. Model Assumptions and Justifications
+Provide 3-5 assumptions, each with justification:
+
+**Assumption 1**: [Assumption content]
+*Justification*: [Why this assumption is reasonable]
+
+**Assumption 2**: [Assumption content]
+*Justification*: [Why this assumption is reasonable, citing domain knowledge]
+
+---
+**Reference the model sections below and complete the assumptions.**
+
+{模型的建立与求解}
+{题目}
+"""
+
+symbol = """
+# 4. Notation and Data Preprocessing
+## 4.1 Notation
+
+| Symbol | Description | Unit |
+|--------|------------|------|
+| \\(x\\) | Variable description | - |
+| \\(y\\) | Variable description | - |
+
+## 4.2 Data Preprocessing
+Describe data cleaning, missing value treatment, outlier detection, and descriptive statistics.
+
+---
+**Reference the model sections below.**
+
+{模型的建立与求解}
+"""
+
+eda = """
+## 4.2 Exploratory Data Analysis
+~250 words describing the data: basic statistics, distributions, correlations, key patterns.
+"""
+
+ques1 = """
+# 5. Model Development and Solution
+## 5.1 Problem 1: Model Development and Solution
+### 5.1.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.1.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+ques2 = """
+## 5.2 Problem 2: Model Development and Solution
+### 5.2.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.2.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+ques3 = """
+## 5.3 Problem 3: Model Development and Solution
+### 5.3.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.3.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+ques4 = """
+## 5.4 Problem 4: Model Development and Solution
+### 5.4.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.4.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+ques5 = """
+## 5.5 Problem 5: Model Development and Solution
+### 5.5.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.5.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+ques6 = """
+## 5.6 Problem 6: Model Development and Solution
+### 5.6.1 Model Construction
+Introduction to the model, equations used, and the model building process.
+### 5.6.2 Model Solution
+Validation of the model, result analysis, and answering the problem.
+~600 words.
+"""
+sensitivity_analysis = """
+# 6. Sensitivity Analysis
+## 6.1 Parameter Sensitivity
+Analyze how changes in key parameters affect the results.
+## 6.2 Robustness Verification
+Cross-validation or bootstrap assessment of model stability.
+"""
+judge = """
+# 7. Model Evaluation and Discussion
+## 7.1 Strengths
+## 7.2 Limitations
+## 7.3 Improvements and Extensions
+Strengths should outnumber limitations. 2-3 specific limitations with reasoning.
+~250 words.
+"""
